@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover Taniti</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-FTM9ZwGcjBbZEDUPMfZ6UZkM1iKZ2jjYY1R4eH9Lk6AlA7ZC1we7gV6JKEMfFHLX8UzhOeykq7bwU4DR+KNElQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <h1>Discover Taniti</h1>
+  </header>
+
+  <div class="main-nav">
+    <div class="slideshow">
+      <img class="slide" src='resources/eye_level_view_beach.jpg' alt="Slide 1">
+    </div>
+    <div class="nav-icons">
+      <div class="nav-icon">
+        <i class="fa-solid fa-map fa-2x"></i>
+        <div>Attractions</div>
+      </div>
+      <div class="nav-icon">
+        <i class="fas fa-utensils fa-2x"></i>
+        <div>Restaurants</div>
+      </div>
+      <div class="nav-icon">
+        <i class="fas fa-bed fa-2x"></i>
+        <div>Lodging</div>
+      </div>
+    </div>
+  </div>
+
+  <button class="about-btn">About the island</button>
+
+  <div class="section">
+    <h2>About the island</h2>
+    <div class="card">Some preview text about Taniti Island's history and geography...</div>
+    <div class="card">More information about culture and local life...</div>
+  </div>
+
+  <div class="section">
+    <h2>Tips & Info</h2>
+    <div class="tips">
+      <div class="tip-card">
+        <ul>
+          <li>Currency</li>
+          <li>Emergency numbers</li>
+          <li>Weather</li>
+        </ul>
+      </div>
+      <div class="tip-card">
+        <a class="read-more">Read More</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+  <small>
+    References: 
+    Wiktor, F. (2017). Eye level beach [Photograph]. Pexels. https://www.pexels.com/photo/seaside-994605/
+    Cowley, N. (2018). Short view beach [Photograph]. Pexels. https://www.pexels.com/photo/closeup-photography-of-sand-1151282/
+    Juren, D. (2019). Tall view beach [Photograph]. Pexels. https://www.pexels.com/photo/beach-under-blue-and-white-sky-1835718/
+  </small>
+</footer>
+
+  <script>
+    const images = [
+      'resources/eye_level_view_beach.jpg',
+      'resources/short_view_beach.jpg',
+      'resources/tall_view_beach.jpg',
+    ];
+    let current = 0;
+    const slide = document.querySelector(".slide");
+    setInterval(() => {
+      current = (current + 1) % images.length;
+      slide.src = images[current];
+    }, 3000);
+  </script>
+</body>
+</html>
