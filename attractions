@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taniti Attractions</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Attractions</h1>
+    <div class="header-wave">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="var(--ocean-blue)" />
+            <stop offset="100%" stop-color="var(--ocean-blue-dark)" />
+          </linearGradient>
+        </defs>
+        <path fill="url(#waveGradient)" fill-opacity="1" d="M0,160 C360,320 1080,0 1440,160 L1440,320 L0,320 Z"></path>
+      </svg>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="nav-left">
+      <a href="index.html" class="back-link">
+        ← Back
+      </a>
+    </div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="lodging.html">Lodging</a>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="section-intro">
+      <p>Explore the best of Taniti — from breathtaking beaches to thrilling volcano tours. Choose your adventure below.</p>
+    </div>
+
+    <div class="attractions-category-grid">
+      <a href="#beaches" class="nav-icon">
+        <svg data-feather="umbrella"></svg>
+        <div>Beaches</div>
+      </a>
+      <a href="#rainforest" class="nav-icon">
+        <svg data-feather="leaf"></svg>
+        <div>Rainforest</div>
+      </a>
+      <a href="#volcano" class="nav-icon">
+        <svg data-feather="triangle"></svg>
+        <div>Volcano</div>
+      </a>
+      <a href="#sightseeing" class="nav-icon">
+        <svg data-feather="map"></svg>
+        <div>Sightseeing</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="section" id="beaches">
+    <h2>Beaches</h2>
+    <div class="card">
+      <p>Enjoy white sand beaches around Yellow Leaf Bay or explore secluded rocky coastlines ideal for snorkeling and sunbathing.</p>
+    </div>
+  </section>
+
+  <section class="section" id="rainforest">
+    <h2>Rainforest</h2>
+    <div class="card">
+      <p>Take a guided zip-lining adventure or a self-paced hike through Taniti’s lush rainforest trails filled with native wildlife and waterfalls.</p>
+    </div>
+  </section>
+
+  <section class="section" id="volcano">
+    <h2>Volcano</h2>
+    <div class="card">
+      <p>Tour Taniti’s small active volcano with expert guides and enjoy panoramic views of the island’s interior.</p>
+    </div>
+  </section>
+
+  <section class="section" id="sightseeing">
+    <h2>Sightseeing</h2>
+    <div class="card">
+      <p>Take island bus or boat tours, visit Merriton Landing, and explore Taniti City’s architecture and museums.</p>
+    </div>
+  </section>
+</body>
+</html>
