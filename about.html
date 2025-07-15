@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taniti About</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>About the Island</h1>
+        <div class="header-wave">
+            <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="var(--ocean-blue)" />
+                        <stop offset="100%" stop-color="var(--ocean-blue-dark)" />
+                    </linearGradient>
+                </defs>
+                <path fill="url(#waveGradient)" fill-opacity="1" d="M0,160 C360,320 1080,0 1440,160 L1440,320 L0,320 Z">
+                </path>
+            </svg>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="nav-left">
+            <a href="index.html" class="back-link">
+                ← Back
+            </a>
+        </div>
+        <div class="nav-right">
+            <a href="index.html">Home</a>
+            <a href="restaurants.html">Restaurants</a>
+        </div>
+    </nav>
+
+    <section class="about-hero">
+        <img src="resources/aerial_shore.jpg" alt="Aerial view of Taniti" />
+    </section>
+
+    <section class="section about-intro">
+        <p>
+            Taniti is a small, tropical island in the Pacific. While the island has an area of less than 500 square
+            miles, the terrain is varied and includes both sandy and rocky beaches, a small but safe harbor, lush
+            tropical rainforests, and a mountainous interior that includes a small, active volcano. Taniti has an
+            indigenous population of about 20,000. Until a recent increase in tourism, most the Tanitian economy was
+            dominated by fishing or agriculture.
+        </p>
+    </section>
+
+    <section class="section blog-entries">
+        <article class="blog-card">
+            <h3>Stocking Up on Supplies</h3>
+            <p class="blog-meta">Posted July 6, 2025</p>
+            <p class="blog-preview">
+                Whether you need sunscreen, bottled water, or some late-night snacks, Taniti has you covered.
+                <span class="blog-more hidden">
+                    The island offers two full-size supermarkets and two smaller grocery stores. For night owls or
+                    last-minute needs, there's a <strong>24-hour convenience store</strong>, perfect for grabbing
+                    sunscreen before your morning hike or snacks for your beach day. <br><br>
+                    Tip: Since Taniti uses the U.S. dollar and most shops accept major credit cards (plus euros and
+                    yen), you won’t need to worry about exchanging too much cash up front.
+                </span>
+            </p>
+            <button class="toggle-btn">Read More</button>
+        </article>
+
+        <article class="blog-card">
+            <h3>How to Travel Like a Local</h3>
+            <p class="blog-meta">Posted July 6, 2025</p>
+            <p class="blog-preview">
+                Taniti is easy to explore no matter your style of travel.
+                <span class="blog-more hidden">
+                    If you're staying in Taniti City, public buses run daily from <strong>5 a.m. to 11 p.m.</strong> and
+                    the city itself is very walkable — especially the Merriton Landing area. <br><br>
+                    Want more freedom? <strong>Rental cars</strong> are available near the airport, and <strong>bicycles
+                        with helmets</strong> can be rented throughout the city (helmets are required by law). For
+                    broader island access, <strong>private buses and taxis</strong> also operate and are fairly easy to
+                    use.
+                </span>
+            </p>
+            <button class="toggle-btn">Read More</button>
+        </article>
+
+        <article class="blog-card">
+            <h3>Taniti Nightlife: Quiet Evenings or Dancing</h3>
+            <p class="blog-meta">Posted July 6, 2025</p>
+            <p class="blog-preview">
+                Taniti might be known for its beaches, but its nightlife is quietly blossoming.
+                <span class="blog-more hidden">
+                    You’ll find <strong>several pubs</strong>, a local <strong>microbrewery</strong>, and a <strong>new
+                        dance club</strong> that stays lively until midnight — the legal cutoff for alcohol sales. Movie
+                    lovers, arcade players, and art enthusiasts will also find options around <strong>Merriton
+                        Landing</strong>. <br><br>
+                    Tip: The drinking age is 18, and although the law isn't strictly enforced, alcohol can't be
+                    sold or served from midnight to 9 a.m.
+                </span>
+            </p>
+            <button class="toggle-btn">Read More</button>
+        </article>
+
+    </section>
+
+
+    <footer>
+        <small>
+            References:
+            Reçi, D. (2025). Aerial shore photo [Photograph]. Pexels.
+            https://www.pexels.com/photo/aerial-view-of-tropical-island-coastline-32279569/
+        </small>
+    </footer>
+
+    <script>
+        document.querySelectorAll(".toggle-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const moreText = btn.previousElementSibling.querySelector(".blog-more");
+                moreText.classList.toggle("hidden");
+                btn.textContent = moreText.classList.contains("hidden") ? "Read More" : "Read Less";
+            });
+        });
+    </script>
+
+</body>
+
+</html>
